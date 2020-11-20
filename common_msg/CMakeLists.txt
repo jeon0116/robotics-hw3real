@@ -68,10 +68,10 @@ add_message_files(
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+ generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -105,7 +105,7 @@ add_message_files(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES common_msg
-#  CATKIN_DEPENDS geometry_msg message_generation rospy std_msgs
+  CATKIN_DEPENDS geometry_msg message_generation rospy std_msgs
 #  DEPENDS system_lib
 )
 
